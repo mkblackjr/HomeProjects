@@ -1,0 +1,208 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+#: kivy 1.10.0
+#: import sm kivy.uix.screenmanager
+
+<Widget>:
+    font_name: "Meteora"
+
+<WindowBackground@BoxLayout>:
+	orientation: "vertical"
+	padding: root.height/32
+	canvas:
+		# Bottom Left
+		Color:
+			rgb: 0.9,0,0
+		Triangle:
+			points: 0,0,400,0,0,400
+		Color:
+			rgb: 0,0.4,0
+		Triangle:
+			points: 0,0,350,0,0,350
+		Color:
+			rgb: 0.9,0,0
+		Triangle:
+			points: 0,0,300,0,0,300
+		Color:
+			rgb: 0,0.4,0
+		Triangle:
+			points: 0,0,250,0,0,250
+		Color:
+			rgb: 0.9,0,0
+		Triangle:
+			points: 0,0,200,0,0,200
+		Color:
+			rgb: 0,0.4,0
+		Triangle:
+			points: 0,0,150,0,0,150
+		Color:
+			rgb: 0.9,0,0
+		Triangle:
+			points: 0,0,100,0,0,100
+		Color:
+			rgb: 0,0.4,0
+		Triangle:
+			points: 0,0,50,0,0,50
+
+		# Top Left
+		Color:
+			rgb: 0.9,0,0
+		Triangle:
+			points: 0,root.height,400,root.height,0,root.height-400
+		Color:
+			rgb: 0,0.4,0
+		Triangle:
+			points: 0,root.height,350,root.height,0,root.height-350
+		Color:
+			rgb: 0.9,0,0
+		Triangle:
+			points: 0,root.height,300,root.height,0,root.height-300
+		Color:
+			rgb: 0,0.4,0
+		Triangle:
+			points: 0,root.height,250,root.height,0,root.height-250
+		Color:
+			rgb: 0.9,0,0
+		Triangle:
+			points: 0,root.height,200,root.height,0,root.height-200
+		Color:
+			rgb: 0,0.4,0
+		Triangle:
+			points: 0,root.height,150,root.height,0,root.height-150
+		Color:
+			rgb: 0.9,0,0
+		Triangle:
+			points: 0,root.height,100,root.height,0,root.height-100
+		Color:
+			rgb: 0,0.4,0
+		Triangle:
+			points: 0,root.height,50,root.height,0,root.height-50
+
+		# Top Right
+		Color:
+			rgb: 0.9,0,0
+		Triangle:
+			points: root.width,root.height,root.width-400,root.height,root.width,root.height-400
+		Color:
+			rgb: 0,0.4,0
+		Triangle:
+			points: root.width,root.height,root.width-350,root.height,root.width,root.height-350
+		Color:
+			rgb: 0.9,0,0
+		Triangle:
+			points: root.width,root.height,root.width-300,root.height,root.width,root.height-300
+		Color:
+			rgb: 0,0.4,0
+		Triangle:
+			points: root.width,root.height,root.width-250,root.height,root.width,root.height-250
+		Color:
+			rgb: 0.9,0,0
+		Triangle:
+			points: root.width,root.height,root.width-200,root.height,root.width,root.height-200
+		Color:
+			rgb: 0,0.4,0
+		Triangle:
+			points: root.width,root.height,root.width-150,root.height,root.width,root.height-150
+		Color:
+			rgb: 0.9,0,0
+		Triangle:
+			points: root.width,root.height,root.width-100,root.height,root.width,root.height-100
+		Color:
+			rgb: 0,0.4,0
+		Triangle:
+			points: root.width,root.height,root.width-50,root.height,root.width,root.height-50
+
+		# Bottom Right
+		Color:
+			rgb: 0.9,0,0
+		Triangle:
+			points: root.width,0,root.width-400,0,root.width,400
+		Color:
+			rgb: 0,0.4,0
+		Triangle:
+			points: root.width,0,root.width-350,0,root.width,350
+		Color:
+			rgb: 0.9,0,0
+		Triangle:
+			points: root.width,0,root.width-300,0,root.width,300
+		Color:
+			rgb: 0,0.4,0
+		Triangle:
+			points: root.width,0,root.width-250,0,root.width,250
+		Color:
+			rgb: 0.9,0,0
+		Triangle:
+			points: root.width,0,root.width-200,0,root.width,200
+		Color:
+			rgb: 0,0.4,0
+		Triangle:
+			points: root.width,0,root.width-150,0,root.width,150
+		Color:
+			rgb: 0.9,0,0
+		Triangle:
+			points: root.width,0,root.width-100,0,root.width,100
+		Color:
+			rgb: 0,0.4,0
+		Triangle:
+			points: root.width,0,root.width-50,0,root.width,50
+        # Color:
+        #     # rgb: 0,0,.8039 # Blue
+        #     rgb: 0.3,0.1,0.4
+        # Rectangle:
+        #     pos: root.x,root.y
+        #     size: root.width,root.height
+        # Color:
+        #     rgb: 0,0.6,0.8
+        # Rectangle:
+        #     pos: root.x + root.height/32, root.y + root.height/32
+        #     size: root.width-root.height/16,15/16*root.height
+
+<BeginButton>:
+	
+	on_release: self.begin
+
+<InitialScreen>:
+	WindowBackground:
+		Label:
+		BoxLayout:
+			orientation: "vertical"
+			Label:
+				size_hint: 1,0.1
+				font_size: 20
+				text: "Ho Ho Hope you're ready for some presents!"
+			AnchorLayout:
+				anchor_x: "center"
+				AsyncImage:
+					source: "https://cdn.shopify.com/s/files/1/0533/2089/files/Christmas-gifts-for-web-designers-hero.jpg?1665954907344448052"
+					size_hint: 0.9,0.9
+			Label:
+				size_hint: 1,0.05
+				font_size: 12
+				text: "(And I don't just mean my presence)"
+				
+		BoxLayout:
+			orientation: "vertical"	
+			AnchorLayout:
+				anchor_x: "center"
+				Button:
+					text: "Let's Go!"
+					size_hint: 0.3,0.4
+					on_release:
+		                root.parent.transition = sm.FallOutTransition()
+		                root.parent.transition.duration = 0.5
+		                root.parent.current = 'Main'
+			Label:
+			Label:
+
+
+<MainScreen>:
+	name: 'Main'
+	WindowBackground:
+
+
+<GUI>:
+	InitialScreen:
+		id: initial_screen
+	MainScreen:
+		id: main_screen
