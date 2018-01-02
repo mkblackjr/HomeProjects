@@ -4,8 +4,8 @@
 #: kivy 1.10.0
 #: import sm kivy.uix.screenmanager
 
-<Widget>:
-    font_name: "Meteora"
+# <Widget>:
+#     font_name: "Meteora"
 
 <WindowBackground@BoxLayout>:
 	orientation: "vertical"
@@ -15,19 +15,27 @@
 		Color:
 			rgb: 0.9,0,0
 		Triangle:
+			points: 0,0,800,0,0,800
+		Color:
+			rgb: 0,0.4,0
+		Triangle:
+			points: 0,0,700,0,0,700
+		Color:
+			rgb: 0.9,0,0
+		Triangle:
+			points: 0,0,600,0,0,600
+		Color:
+			rgb: 0,0.4,0
+		Triangle:
+			points: 0,0,500,0,0,500
+		Color:
+			rgb: 0.9,0,0
+		Triangle:
 			points: 0,0,400,0,0,400
 		Color:
 			rgb: 0,0.4,0
 		Triangle:
-			points: 0,0,350,0,0,350
-		Color:
-			rgb: 0.9,0,0
-		Triangle:
 			points: 0,0,300,0,0,300
-		Color:
-			rgb: 0,0.4,0
-		Triangle:
-			points: 0,0,250,0,0,250
 		Color:
 			rgb: 0.9,0,0
 		Triangle:
@@ -35,17 +43,25 @@
 		Color:
 			rgb: 0,0.4,0
 		Triangle:
-			points: 0,0,150,0,0,150
+			points: 0,0,100,0,0,100
+
+		# Top Left
 		Color:
 			rgb: 0.9,0,0
 		Triangle:
-			points: 0,0,100,0,0,100
+			points: 0,root.height,800,root.height,0,root.height-800
 		Color:
 			rgb: 0,0.4,0
 		Triangle:
-			points: 0,0,50,0,0,50
-
-		# Top Left
+			points: 0,root.height,700,root.height,0,root.height-700
+		Color:
+			rgb: 0.9,0,0
+		Triangle:
+			points: 0,root.height,600,root.height,0,root.height-600
+		Color:
+			rgb: 0,0.4,0
+		Triangle:
+			points: 0,root.height,500,root.height,0,root.height-500
 		Color:
 			rgb: 0.9,0,0
 		Triangle:
@@ -53,15 +69,7 @@
 		Color:
 			rgb: 0,0.4,0
 		Triangle:
-			points: 0,root.height,350,root.height,0,root.height-350
-		Color:
-			rgb: 0.9,0,0
-		Triangle:
 			points: 0,root.height,300,root.height,0,root.height-300
-		Color:
-			rgb: 0,0.4,0
-		Triangle:
-			points: 0,root.height,250,root.height,0,root.height-250
 		Color:
 			rgb: 0.9,0,0
 		Triangle:
@@ -69,17 +77,25 @@
 		Color:
 			rgb: 0,0.4,0
 		Triangle:
-			points: 0,root.height,150,root.height,0,root.height-150
+			points: 0,root.height,100,root.height,0,root.height-100
+
+		# Top Right
 		Color:
 			rgb: 0.9,0,0
 		Triangle:
-			points: 0,root.height,100,root.height,0,root.height-100
+			points: root.width,root.height,root.width-800,root.height,root.width,root.height-800
 		Color:
 			rgb: 0,0.4,0
 		Triangle:
-			points: 0,root.height,50,root.height,0,root.height-50
-
-		# Top Right
+			points: root.width,root.height,root.width-700,root.height,root.width,root.height-700
+		Color:
+			rgb: 0.9,0,0
+		Triangle:
+			points: root.width,root.height,root.width-600,root.height,root.width,root.height-600
+		Color:
+			rgb: 0,0.4,0
+		Triangle:
+			points: root.width,root.height,root.width-500,root.height,root.width,root.height-500
 		Color:
 			rgb: 0.9,0,0
 		Triangle:
@@ -87,15 +103,7 @@
 		Color:
 			rgb: 0,0.4,0
 		Triangle:
-			points: root.width,root.height,root.width-350,root.height,root.width,root.height-350
-		Color:
-			rgb: 0.9,0,0
-		Triangle:
 			points: root.width,root.height,root.width-300,root.height,root.width,root.height-300
-		Color:
-			rgb: 0,0.4,0
-		Triangle:
-			points: root.width,root.height,root.width-250,root.height,root.width,root.height-250
 		Color:
 			rgb: 0.9,0,0
 		Triangle:
@@ -103,17 +111,25 @@
 		Color:
 			rgb: 0,0.4,0
 		Triangle:
-			points: root.width,root.height,root.width-150,root.height,root.width,root.height-150
+			points: root.width,root.height,root.width-100,root.height,root.width,root.height-100
+
+		# Bottom Right
 		Color:
 			rgb: 0.9,0,0
 		Triangle:
-			points: root.width,root.height,root.width-100,root.height,root.width,root.height-100
+			points: root.width,0,root.width-800,0,root.width,800
 		Color:
 			rgb: 0,0.4,0
 		Triangle:
-			points: root.width,root.height,root.width-50,root.height,root.width,root.height-50
-
-		# Bottom Right
+			points: root.width,0,root.width-700,0,root.width,700
+		Color:
+			rgb: 0.9,0,0
+		Triangle:
+			points: root.width,0,root.width-600,0,root.width,600
+		Color:
+			rgb: 0,0.4,0
+		Triangle:
+			points: root.width,0,root.width-500,0,root.width,500
 		Color:
 			rgb: 0.9,0,0
 		Triangle:
@@ -121,15 +137,7 @@
 		Color:
 			rgb: 0,0.4,0
 		Triangle:
-			points: root.width,0,root.width-350,0,root.width,350
-		Color:
-			rgb: 0.9,0,0
-		Triangle:
 			points: root.width,0,root.width-300,0,root.width,300
-		Color:
-			rgb: 0,0.4,0
-		Triangle:
-			points: root.width,0,root.width-250,0,root.width,250
 		Color:
 			rgb: 0.9,0,0
 		Triangle:
@@ -137,15 +145,7 @@
 		Color:
 			rgb: 0,0.4,0
 		Triangle:
-			points: root.width,0,root.width-150,0,root.width,150
-		Color:
-			rgb: 0.9,0,0
-		Triangle:
-			points: root.width,0,root.width-100,0,root.width,100
-		Color:
-			rgb: 0,0.4,0
-		Triangle:
-			points: root.width,0,root.width-50,0,root.width,50
+			points: root.width,0,root.width-100,root.width,100
         # Color:
         #     # rgb: 0,0,.8039 # Blue
         #     rgb: 0.3,0.1,0.4
@@ -169,7 +169,7 @@
 			orientation: "vertical"
 			Label:
 				size_hint: 1,0.1
-				font_size: 20
+				font_size: 40
 				text: "Ho Ho Hope you're ready for some presents!"
 			AnchorLayout:
 				anchor_x: "center"
@@ -178,7 +178,7 @@
 					size_hint: 0.9,0.9
 			Label:
 				size_hint: 1,0.05
-				font_size: 12
+				font_size: 24
 				text: "(And I don't just mean my presence)"
 				
 		BoxLayout:
@@ -199,6 +199,13 @@
 <MainScreen>:
 	name: 'Main'
 	WindowBackground:
+		AnchorLayout:
+			anchor_x: "center"
+			anchor_y: "center"
+			Video:
+				source: './Christmas2017.avi'
+				# state: 'play'
+
 
 
 <GUI>:
